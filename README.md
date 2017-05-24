@@ -1,6 +1,8 @@
 # hexo-static-math
 A hexo plugin which renders math expressions into the generated html files.
 
+# Why use this
+Math expressions are statically rendered into html files offline, so it's no need to load mathjax script from CDN when openning the page.
 
 ## How to install
 
@@ -9,5 +11,6 @@ A hexo plugin which renders math expressions into the generated html files.
 ## Usage
 
 * Display as block: `{% math %} h_\theta(x) = \theta^Tx {% endmath %}`
-  or `` `$$ h_\theta(x) = \theta^Tx $$` ``
-* Display inline: `{% math inline %} blabla.. {% endmath %}` or `` `$ blabla.. $` ``
+* Display inline: `{% math inline %} blabla.. {% endmath %}`
+
+For single line expressions, you can also use `` `$$... $$` `` for block level expressions, or `` `$... $` `` for inline expressions.
